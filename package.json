@@ -1,0 +1,22 @@
+{
+  "name": "constrain-img",
+  "version": "1.1.0",
+  "description": "A command line or programatic tool to constrain images in a folder to a max width and height.",
+  "main": "constrainImg.js",
+  "dependencies": {
+    "commander": "^2.8.1",
+    "es6-promisify": "^3.0.0",
+    "fs-extra": "^0.24.0",
+    "gm": "^1.18.1",
+    "minimatch": "^2.0.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Kirk",
+  "license": "ISC",
+  "preferGlobal": "true",
+  "bin": {
+    "constrainImg": "constrainImg.js"
+  }
+}
