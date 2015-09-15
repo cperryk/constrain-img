@@ -1,6 +1,6 @@
 {
   "name": "constrain-img",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "A command line or programatic tool to constrain images in a folder to a max width and height.",
   "main": "constrainImg.js",
   "dependencies": {
@@ -18,5 +18,10 @@
   "preferGlobal": "true",
   "bin": {
     "constrainImg": "constrainImg.js"
-  }
+  },
+  "repository" :
+    {
+      "type" : "git",
+      "url" : "https://github.com/cperryk/constrain-img.git"
+    }
 }

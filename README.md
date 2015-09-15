@@ -6,6 +6,14 @@ ConstrainImg is a command-line or progammatic tool for resizing multiple images 
 
 ### Installation
 
+You must have GraphicsMagick installed on your machine. In Mac OS X, you can use [Homebrew](http://brew.sh/):
+
+```
+brew install graphicsmagick
+```
+
+Then, to install ConstrainImg:
+
 ```
 npm install constrain-img -g
 ```
