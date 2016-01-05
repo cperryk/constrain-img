@@ -8,12 +8,9 @@ fs.readdirAsync = promisify(fs.readdir);
 fs.ensureDirAsync = promisify(fs.ensureDir);
 
 function constrainImages(conf, cb){
-  var width = conf.width;
-  var height = conf.height;
   var source_dir = conf.source;
   var target_dir = conf.out;
   var quality = conf.quality || 100;
-  var bound_ar  = width / height;
   var force = conf.force || false;
 
   return fs.ensureDirAsync(target_dir)
@@ -69,6 +66,9 @@ function constrainImages(conf, cb){
   function constrainImg(img){
     return new Promise(function(resolve, reject){
       img.size(function(err, size){
+        var width = conf.width || size.width;
+        var height = conf.height || size.height;
+        var bound_ar  = width / height;
         if(err){
           return reject(err);
         }
