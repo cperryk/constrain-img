@@ -149,7 +149,6 @@ if(require.main === module){
     if(args.length === 1){
       return {
         width: args[0],
-        height: args[0],
         source: '.',
         out: '.'
       };

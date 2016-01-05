@@ -21,6 +21,12 @@ npm install constrain-img -g
 ### Usage
 
 ```
+constrainImg [<source_dir>] [<out_dir>] [<width>] [<height>] [<options>] [options]
+```
+
+Example:
+
+```
   constrainImg myimages newimages 200 100
 ```
 
